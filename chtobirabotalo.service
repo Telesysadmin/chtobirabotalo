@@ -1,0 +1,11 @@
+[Unit]
+Description=chtobirabotalo
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/chtobirabotalo
+
+[Install]
+WantedBy=multi-user.target
