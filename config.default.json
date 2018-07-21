@@ -1,0 +1,38 @@
+{
+  "SERVER_NAME": "domain.com",
+  "PORT": 443,
+  "API": {
+    "vk": {
+      "url": "https://api.vk.com/method/",
+      "access_token": "",
+      "secret_key": "",
+      "group_id": 11111,
+      "confirm": "",
+      "version": "5.80",
+      "peer_id": 1
+    }
+  },
+  "SSL": {
+    "cert": "./cert/fullchain1.pem",
+    "privkey": "./cert/privkey1.pem",
+    "client_cert": "./cert/vkapi.crt",
+    "client_key": "./cert/vkapi.key"
+  },
+  "REQUESTS": {
+    "help": {
+      "description": "Mde"
+    },
+    "traffic": {
+      "description": "show traffic",
+      "file": "traffic.sh"
+    }
+  },
+  "MONITORING": {
+    "INTERVAL": 5,
+    "problem_lifetime": 300,
+    "scripts": [
+      "diskspace",
+      "load"
+    ]
+  }
+}
